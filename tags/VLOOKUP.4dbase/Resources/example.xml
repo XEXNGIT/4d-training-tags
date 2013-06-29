@@ -1,0 +1,419 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>miyako keisuke</Author>
+  <LastAuthor>miyako keisuke</LastAuthor>
+  <Created>2013-06-28T08:07:45Z</Created>
+  <LastSaved>2013-06-28T08:02:22Z</LastSaved>
+  <Company>株式会社フォーディー・ジャパン</Company>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>9960</WindowHeight>
+  <WindowWidth>16380</WindowWidth>
+  <WindowTopX>600</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Interior ss:Color="#A2BD90" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Interior ss:Color="#FFCC99" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Swiss" ss:Size="12"
+    ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#003366" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Swiss" ss:Size="12"
+    ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#003366" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="#,##0_ "/>
+  </Style>
+  <Style ss:ID="s66">
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Swiss" ss:Size="12"
+    ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#90713A" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="&quot;¥&quot;#,##0;&quot;¥&quot;\-#,##0"/>
+  </Style>
+  <Style ss:ID="s67">
+   <NumberFormat ss:Format="#,##0_ "/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Inventory">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="21" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="77" ss:DefaultRowHeight="18">
+   <Column ss:AutoFitWidth="0" ss:Width="113"/>
+   <Column ss:AutoFitWidth="0" ss:Width="227"/>
+   <Column ss:AutoFitWidth="0" ss:Width="113"/>
+   <Column ss:AutoFitWidth="0" ss:Width="57"/>
+   <Column ss:AutoFitWidth="0" ss:Width="113"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">id</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">price</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">count</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">amount</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">エアコン</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">19800</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">59400</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">扇風機</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">15000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">30000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">空気清浄機</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">18400</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">55200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">加湿器</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">12900</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">51600</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">除湿機</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">7400</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">7400</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">冷蔵庫</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">11900</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">23800</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">冷凍庫</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">5300</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">31800</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">洗濯機</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">18800</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">112800</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">掃除機</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">5100</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">15300</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">炊飯器</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">8600</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">51600</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">オーブンレンジ</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">17500</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">140000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">電子レンジ</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">16400</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">82000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">電動アシスト自転車</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">6100</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">12200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">コーヒーメーカー</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">10100</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">50500</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">オーブントースター</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">15400</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">138600</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">ホットプレート</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">2300</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">11500</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">ホットサンドメーカー</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">15500</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">31000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">アイスクリームメーカー</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">3700</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">29600</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">ヨーグルトメーカー</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">200</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Formula="=Product!RC"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s64" ss:Formula="=VLOOKUP(RC[-1],Product!R2C1:R21C3,2,FALSE)"><Data
+      ss:Type="String">ワッフルメーカー</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=VLOOKUP(RC[-2],Product!R2C1:R21C3,3,FALSE)"><Data
+      ss:Type="Number">18600</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">55800</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Product">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="21" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="77" ss:DefaultRowHeight="18">
+   <Column ss:AutoFitWidth="0" ss:Width="113"/>
+   <Column ss:AutoFitWidth="0" ss:Width="227"/>
+   <Column ss:AutoFitWidth="0" ss:Width="113"/>
+   <Column ss:AutoFitWidth="0" ss:Width="57"/>
+   <Column ss:AutoFitWidth="0" ss:Width="113"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">id</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">price</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">エアコン</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">19800</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">扇風機</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">15000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">空気清浄機</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">18400</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">加湿器</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">12900</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">除湿機</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">7400</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">冷蔵庫</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">11900</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">冷凍庫</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5300</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">洗濯機</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">18800</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">掃除機</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">炊飯器</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">8600</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">オーブンレンジ</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">17500</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">電子レンジ</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">16400</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">電動アシスト自転車</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">コーヒーメーカー</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">10100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">オーブントースター</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">15400</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">ホットプレート</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2300</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">ホットサンドメーカー</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">15500</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">アイスクリームメーカー</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">3700</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">ヨーグルトメーカー</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">ワッフルメーカー</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">18600</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>26</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
